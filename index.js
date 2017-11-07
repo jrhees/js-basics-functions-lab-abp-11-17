@@ -10,3 +10,18 @@ function distanceFromHqInFeet(block) {
 function distanceTravelledInFeet(startingBlock, endingBlock) {
   return 264 * Math.abs(startingBlock-endingBlock);
 }
+
+function calculatesFarePrice(start, destination) {
+  let distance = distanceTravelledInFeet(start, destination);
+  switch (distance) {
+    case >2500:
+      return 'cannot travel that far';
+      break;
+    case <400:
+      return 0;
+      
+      break;
+    default:
+      
+  }
+}
